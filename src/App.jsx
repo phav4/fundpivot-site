@@ -1,14 +1,13 @@
-import { Routes, Route } from 'react-router-dom';
-import Main from './components/Main';
-import FundPivot from './pages/FundPivot';
-import Auditly from './pages/Auditly';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './index.css';
 
-export default function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/fundpivot" element={<FundPivot />} />
-      <Route path="/auditly" element={<Auditly />} />
-    </Routes>
-  );
-}
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);

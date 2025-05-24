@@ -1,20 +1,16 @@
-export default function Features() {
+function Features() {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-        <div>
-          <h2 className="text-2xl font-semibold mb-2">FundPivot</h2>
-          <p className="text-gray-600">
-            Manage investor relations, pitch decks, and fundraising pipelines with tools crafted for early-stage founders.
-          </p>
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-2">Auditly Limited</h2>
-          <p className="text-gray-600">
-            Streamline compliance workflows and documentation to reduce audit risks for finance and healthcare sectors.
-          </p>
-        </div>
+    <section className="p-8 grid md:grid-cols-2 gap-6">
+      <div>
+        <h3 className="text-xl font-bold mb-2">Investor-Ready Tools</h3>
+        <p>Organize your fundraising like a pro with FundPivot.</p>
+      </div>
+      <div>
+        <h3 className="text-xl font-bold mb-2">Compliance Made Simple</h3>
+        <p>Auditly helps reduce risks and meet regulatory standards.</p>
       </div>
     </section>
   );
 }
+
+export default Features;

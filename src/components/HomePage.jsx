@@ -1,13 +1,17 @@
-import Hero from "./Hero";
-import Features from "./Features";
-import ContactForm from "./ContactForm";
+import Hero from './Hero';
+import Features from './Features';
+import TeamSection from './TeamSection';
+import ContactForm from './ContactForm';
 
-export default function HomePage() {
+function HomePage() {
   return (
-    <main>
+    <div>
       <Hero />
       <Features />
+      <TeamSection />
       <ContactForm />
-    </main>
+    </div>
   );
 }
+
+export default HomePage;
