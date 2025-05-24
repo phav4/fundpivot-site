@@ -1,7 +1,9 @@
-export default function Loading() {
-    return (
-      <div className="h-screen w-screen flex items-center justify-center bg-white">
-        <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-purple-600"></div>
-      </div>
-    );
-  }
+import React from 'react';
+
+const Loader = () => (
+  <div className="flex justify-center items-center h-screen">
+    <p>Loading...</p>
+  </div>
+);
+
+export default Loader;
